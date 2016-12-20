@@ -38,6 +38,11 @@ class ShoppingCart(object):
         return 'Cart with {0} items, total ${1:,}' \
             .format(len(self.__items), self.total_price)
 
+    def __iter__(self):
+        #return self.__items.__iter__()
+        for item in self.__items:
+            yield item
+
 
 def main():
     cart = ShoppingCart(42)
@@ -47,12 +52,15 @@ def main():
     cart.add(CartItem("CD", 19.00))
     cart.add(CartItem("Record", 17.50))
 
+    for item in cart:
+        print('{0} for ${1:,}'.format(item.name, item.price))
+
     print('Total is ${0:,}.'.format(cart.total_price))
 
-    print(cart)
-    print(cart.hobbies)
+    #print(cart)
+    #print(cart.hobbies)
 
-    print(cart.__dict__)
+    #print(cart.__dict__)
 
 
 if __name__ == '__main__':
