@@ -5,7 +5,7 @@ class Person:
         self.hobbies = hobbies
 
 
-def main(people):
+def main():
     people = [
         Person('Jeff', 42, ['tennis', 'hockey', 'football']),
         Person('Michael', 40, ['biking', 'hiking', 'motocross']),
