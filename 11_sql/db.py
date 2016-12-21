@@ -76,8 +76,8 @@ class DBORM:
 
 
 
-        print('Most popular book is:')
-        print(book.__dict__)
+        #print('Most popular book is:')
+        #print(book.__dict__)
 
         #book.sold_copies += 1
         #session.delete(book)
