@@ -39,7 +39,7 @@ class ShoppingCart(object):
             .format(len(self.__items), self.total_price)
 
     def __iter__(self):
-        #return self.__items.__iter__()
+        # return self.__items.__iter__()
         for item in self.__items:
             yield item
 
@@ -57,10 +57,10 @@ def main():
 
     print('Total is ${0:,}.'.format(cart.total_price))
 
-    #print(cart)
-    #print(cart.hobbies)
+    # print(cart)
+    # print(cart.hobbies)
 
-    #print(cart.__dict__)
+    # print(cart.__dict__)
 
 
 if __name__ == '__main__':
