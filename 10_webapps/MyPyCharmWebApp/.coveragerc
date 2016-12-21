@@ -1,0 +1,3 @@
+[run]
+source = mypycharmwebapp
+omit = mypycharmwebapp/test*
